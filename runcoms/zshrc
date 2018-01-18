@@ -11,3 +11,19 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+source $HOME/.aliases
+
+# Maven
+PATH=$PATH:/opt/apache-maven-3.3.9/bin
+
+# cordova
+export ANDROID_HOME=/Users/mhoff/Library/Android/sdk
+PATH=${PATH}:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin
+
+#aspera
+ASPERA_PATH="/Library/Aspera/sbin:/Library/Aspera/bin:/Users/mhoff/Applications/Aspera CLI/bin"
+export PATH="/usr/local/sbin:$PATH:$ASPERA_PATH"
+
+export JAVA_HOME=$(/usr/libexec/java_home)
+
