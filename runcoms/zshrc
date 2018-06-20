@@ -27,3 +27,6 @@ export PATH="/usr/local/sbin:$PATH:$ASPERA_PATH"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
+
+### Added by the Bluemix CLI
+source /usr/local/Bluemix/bx/zsh_autocomplete
